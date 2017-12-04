@@ -1,0 +1,14 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker pull busybox:latest
+language: python
+python:
+  - "3.5"
+# command to install dependencies
+install: "pip3 install -r requirements.txt"
+# command to run tests
+script: 
+  - sudo python3 clone.py --target http://example.com
+  - sudo python3 snare.py --port 8080 --page-dir example.com
