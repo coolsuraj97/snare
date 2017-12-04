@@ -10,5 +10,5 @@ python:
 install: pip3 install -r requirements.txt
 # command to run tests
 script: 
-  - sudo /home/travis/virtualenv/python3.5.3 clone.py --target http://example.com
-  - sudo /home/travis/virtualenv/python3.5.3 snare.py --port 8080 --page-dir example.com
+  - sudo /home/travis/virtualenv/python3.5.3/bin/python3.5 clone.py --target http://example.com
+  - sudo /home/travis/virtualenv/python3.5.3/bin/python3.5 snare.py --port 8080 --page-dir example.com
